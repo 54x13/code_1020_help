@@ -5,9 +5,9 @@ basic.forever(function () {
             basic.pause(200)
         }
     }
-    for (let x = 0; x <= 4; x++) {
-        for (let y = 0; y <= x; y++) {
-            led.plot(1 - x + (1 + y), y + 1)
+    for (let x = 0; x <= 3; x++) {
+        for (let y = 0; y <= 3 - x; y++) {
+            led.plot(y, x + y + 1)
             basic.pause(200)
         }
     }
